@@ -20,7 +20,7 @@ echo "$b is not like the $other"
 
 ## valid \<b> \<other>
 
-> `## valid \<b> \<other>
+> `## valid \<b> \<other>`
 
 ~~~ sh
 # It works.
