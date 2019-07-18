@@ -2,15 +2,6 @@
 
 Click on **Raw** to see the source file.
 
-## valid \<b> \<other>
-
-> `## valid \<b> \<other>`: It works fine thanks to the backslashes.
-
-~~~ sh
-# It works fine.
-echo "$b is not like the $other"
-~~~
-
 ## invalid <b> <other>
 
 > `## invalid <b> <other>`
@@ -23,7 +14,16 @@ making subsequent text bold.
 Despite `<other>` not being a valid HTML tag, it is not displayed.
 
 ~~~ sh
-# It still works.
+# It works.
+echo "$b is not like the $other"
+~~~
+
+## valid \<b> \<other>
+
+> `## valid \<b> \<other>
+
+~~~ sh
+# It works.
 echo "$b is not like the $other"
 ~~~
 
