@@ -22,6 +22,8 @@ echo "$b is not like the $other"
 
 > `## valid \<b> \<other>`
 
+It works fine thanks to backslashes.
+
 ~~~ sh
 # It works.
 echo "$b is not like the $other"
