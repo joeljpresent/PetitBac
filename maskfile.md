@@ -1,8 +1,10 @@
 # Tasks for my project
 
+Click on **Raw** to see the source file.
+
 ## valid \<b> \<other>
 
-> `## valid \<b> \<other>`: It works fine thanks the backslashes.
+> `## valid \<b> \<other>`: It works fine thanks to the backslashes.
 
 ~~~ sh
 # It works fine.
@@ -11,15 +13,26 @@ echo "$b is not like the $other"
 
 ## invalid <b> <other>
 
-> `## invalid <b> <other>`: No backslash, which means that
-> `<b>` and `<other>` are mis-interpreted as HTML tags!
+> `## invalid <b> <other>`
+
+`<b>` and `<other>` are mis-interpreted as HTML tags!
 
 Not only is `<b>` not displayed, it also damages text formatting by
-making all of the subsequent text bold.
+making subsequent text bold.
 
 Despite `<other>` not being a valid HTML tag, it is not displayed.
 
 ~~~ sh
 # It still works.
 echo "$b is not like the $other"
+~~~
+
+## underscore <arg_with_underscores>
+
+> `## underscore <arg_with_underscores>`
+
+As a side note, arguments with underscores don't seem to be interpreted as HTML tags.
+
+~~~ sh
+echo "$arg_with_underscores"
 ~~~
