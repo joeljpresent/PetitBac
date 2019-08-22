@@ -1,11 +1,15 @@
 (* Libéré du désir… *)
 
-char = 'a' | 'ë' | "'";
+char = "a" | "ë" | "'" | "\u{1F99D}" | "\"" | "\"";
 
 option = "queqchose"
   | "autchose"
   | (* empty *);
   
- nom = "Joël", [ [ "J.", ] "Présent"];
+ nom = "Joël", [ [ "J." ], "Présent"];
  
  hein = { char | nom }; 
+
+ascii-displayable = '\u{20}'...'\u{7F}';
+
+ascii-affichable = '\u{20}'..='\u{7F}';
