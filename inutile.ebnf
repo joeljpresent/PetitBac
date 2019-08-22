@@ -1,0 +1,11 @@
+(* Libéré du désir… *)
+
+char = 'a' | 'ë' | "'";
+
+option = "queqchose"
+  | "autchose"
+  | (* empty *);
+  
+ nom = "Joël", [ [ "J.", ] "Présent"];
+ 
+ hein = { char | nom }; 
