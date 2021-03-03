@@ -1,0 +1,7 @@
+// Commentaire
+{
+    "oui": true, // autre commentaire
+    // encore un commentaire
+    "non": false // toujours un commentaire
+}
+// Un dernier commentaire pour la route
